@@ -1,0 +1,10 @@
+def testfunction():
+    global innerfunction
+    def innerfunction():
+        print('Я внутри testfunction')
+    innerfunction()
+testfunction()
+
+print(locals())
+print(globals())
+innerfunction()
